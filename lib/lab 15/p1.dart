@@ -12,8 +12,22 @@ class _p1State extends State<p1> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Practical 15"),
-        
+        bottom: TabBar(
+          tabs: [Tab(icon: Icon(Icons.home),text: "Home"),
+          Tab(icon: Icon(Icons.info_rounded),text: "About"),
+          Tab(icon: Icon(Icons.telegram),text: "Contact")
+          ]
+        ),
       ),
+      body: TabBarView(children: [
+        Card(
+        child:Text("Home"),),
+        Card(
+        child:Text("About"),),
+        Card(
+        child:Text("Contact"),)
+      ],
+      )
     );
   }
 }
