@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sem5practicals/lab%2015/p1.dart';
+import 'package:sem5practicals/lab%2015/p2.dart';
 
 import 'Lab 13/p2.dart' hide p2;
 
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: p1(),
+      home: p2(),
     );
   }
 }

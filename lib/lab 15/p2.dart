@@ -37,6 +37,7 @@ class _p2State extends State<p2> {
           },),
 
       ]),
+      body: Center(child: Text(page_text)),
     );
   }
 }
