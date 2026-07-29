@@ -7,7 +7,9 @@ class p1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Practical 14")),
       body: PageView(
-        controller: PageController(),
+        controller: PageController(viewportFraction: 0.6),
+        scrollDirection: Axis.vertical,
+        reverse: true,
         children: [
           buildCard(card_text: "This is page 1",card_color: Colors.red),
           buildCard(card_text: "This is page 2",card_color: Colors.green),
