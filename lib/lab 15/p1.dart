@@ -9,25 +9,28 @@ class p1 extends StatefulWidget {
 class _p1State extends State<p1> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Practical 15"),
-        bottom: TabBar(
-          tabs: [Tab(icon: Icon(Icons.home),text: "Home"),
-          Tab(icon: Icon(Icons.info_rounded),text: "About"),
-          Tab(icon: Icon(Icons.telegram),text: "Contact")
-          ]
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Practical 15"),
+          bottom: TabBar(
+            tabs: [Tab(icon: Icon(Icons.home),text: "Home"),
+            Tab(icon: Icon(Icons.info_rounded),text: "About"),
+            Tab(icon: Icon(Icons.telegram),text: "Contact")
+            ]
+          ),
         ),
+        body: TabBarView(children: [
+          Card(
+          child:Text("Home"),),
+          Card(
+          child:Text("About"),),
+          Card(
+          child:Text("Contact"),)
+        ],
+        )
       ),
-      body: TabBarView(children: [
-        Card(
-        child:Text("Home"),),
-        Card(
-        child:Text("About"),),
-        Card(
-        child:Text("Contact"),)
-      ],
-      )
     );
   }
 }
