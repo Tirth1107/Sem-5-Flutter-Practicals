@@ -5,7 +5,10 @@ class p1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: ,
+      appBar: AppBar(title: ,),
     );
   }
+}
+Widget buildCard({required String card_text,Color card_color = Colors.grey}){
+  
 }
