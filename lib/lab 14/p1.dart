@@ -9,10 +9,10 @@ class p1 extends StatelessWidget {
       body: PageView(
         controller: PageController(),
         children: [
-          buildCard(card_text: "This is page 1"),
-          buildCard(card_text: "This is page 2"),
-          buildCard(card_text: "This is page 3"),
-          buildCard(card_text: "This is page 4"),
+          buildCard(card_text: "This is page 1",card_color: Colors.red),
+          buildCard(card_text: "This is page 2",card_color: Colors.green),
+          buildCard(card_text: "This is page 3",card_color: Colors.yellow),
+          buildCard(card_text: "This is page 4",card_color: Colors.blue),
           buildCard(card_text: "This is page 5"),
         ],
       ),
