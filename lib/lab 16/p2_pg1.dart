@@ -95,7 +95,7 @@ class _p2_pg1State extends State<p2_pg1> {
                 ElevatedButton(onPressed: (){
                     if(_formkey.currentState!.validate()){
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Login Success")));
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => p2_pg2(Email: Text(Email.toString()), pass: Text(Email.toString()), gender: Text(Email.toString()), con: selectecontries),))
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => p2_pg2(Email: Email.text, pass: Email.text, gender: gender, con: selectecontries),));
                     }
                 }, child: Text("Login")),
             ],

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 class p2_pg2 extends StatelessWidget {
-  Text Email,pass,gender;
+  String Email,pass,gender;
   List<String> con;
-  p2_pg2({super.key, required Text this.Email,
-      required Text this.pass,
-      required Text this.gender,
+  p2_pg2({super.key, required String this.Email,
+      required String this.pass,
+      required String this.gender,
       required List<String> this.con,});
   @override
   Widget build(BuildContext context) {
