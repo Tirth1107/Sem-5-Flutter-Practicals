@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sem5practicals/lab%2016/p2_pg2.dart';
 class p2_pg1 extends StatefulWidget {
   const p2_pg1({super.key});
 
@@ -94,6 +95,7 @@ class _p2_pg1State extends State<p2_pg1> {
                 ElevatedButton(onPressed: (){
                     if(_formkey.currentState!.validate()){
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Login Success")));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => p2_pg2(Email: Text(Email.toString()), pass: Text(Email.toString()), gender: Text(Email.toString()), con: selectecontries),))
                     }
                 }, child: Text("Login")),
             ],
