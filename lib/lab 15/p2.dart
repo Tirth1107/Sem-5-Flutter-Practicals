@@ -19,25 +19,29 @@ class _p2State extends State<p2> {
             setState(() {
               page_text = "Home Page";
             });
+            Navigator.pop(context);
           },),
           ListTile(title: Text("About"),onTap: () {
             setState(() {
               page_text = "About US";
+              Navigator.pop(context);
             });
           },),
           ListTile(title: Text("Contact"),onTap: () {
             setState(() {
               page_text = "Contact US";
+              Navigator.pop(context);
             });
           },),
           ListTile(title: Text("Settings"),onTap: () {
             setState(() {
               page_text = "Settings";
+              Navigator.pop(context);
             });
           },),
 
       ]),
       body: Center(child: Text(page_text)),
-    );
+      );
   }
 }
