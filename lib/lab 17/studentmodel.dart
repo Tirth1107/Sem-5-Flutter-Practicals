@@ -6,7 +6,14 @@ class Student{
   String? StudentSem;
   String? StudentMob;
   String? StudentPass;
-  Student(
-
-  )
+  Student({
+    required this.StudentName,
+    required this.StudentRoll,
+    required this.StudentBranch,
+    required this.StudentSem,
+    required this.StudentMob,
+    required this.StudentPass
+  }
+  ){}
+  
 }
