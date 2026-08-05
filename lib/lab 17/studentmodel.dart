@@ -15,5 +15,15 @@ class Student{
     required this.StudentPass
   }
   ){}
-  
+
+  Map<String,dynamic> toMap(){
+    return {
+    "StudentName":StudentName,
+    "StudentRoll":StudentRoll,
+    "StudentBranch":StudentBranch,
+    "StudentSem":StudentSem,
+    "StudentMob":StudentMob,
+    "StudentPass":StudentPass
+    };
+  }
 }
